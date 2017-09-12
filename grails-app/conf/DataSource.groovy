@@ -55,8 +55,9 @@ environments {
 	}
 	production {
 		dataSource {
-			username = "sart_admin"
-			password = "sart+admin-p@55w0rd"
+			url = "jdbc:mysql://ec2-54-217-200-162.eu-west-1.compute.amazonaws.com:3306/dfkr2abf1p49ju?useUnicode=yes&characterEncoding=UTF-8"
+			username = "jihjrrffsqutyu"
+			password = "61e99482763f26f08b85dd84c6622c6dc341c3f3a2232158e72780b9e3d1b693"
 			//password = "S6+a0hn9wyOiBS/nt/iB9Q=="
 			//passwordEncryptionCodec = DESCodec
 			pooled = true
