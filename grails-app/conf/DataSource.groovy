@@ -25,7 +25,7 @@ environments {
 	}
 	test {
 		dataSource {
-			url = "jdbc:mysql://ec2-54-217-200-162.eu-west-1.compute.amazonaws.com:3306/dfkr2abf1p49ju?useUnicode=yes&characterEncoding=UTF-8"
+			url = "jdbc:mysql://ec2-54-217-200-162.eu-west-1.compute.amazonaws.com:3306/dfkr2abf1p49ju?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory"
  			username = "jihjrrffsqutyu"
  			password = "61e99482763f26f08b85dd84c6622c6dc341c3f3a2232158e72780b9e3d1b693"
 			pooled = true
