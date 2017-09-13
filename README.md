@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/biniama/sart.svg?branch=master)](https://travis-ci.org/biniama/sart)
+
 # sart
 SART
 
