@@ -1,0 +1,8 @@
+package com.bits.sart.model
+
+class ResearchServiceIntegrationTests extends IntegrationSpec {
+    
+    void "should retrieve researches"() {
+        assert true
+    }
+}
