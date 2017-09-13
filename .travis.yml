@@ -9,6 +9,9 @@ branches:
   only:
   - master
 before_install:
+  - sudo apt-get install unzip
+  - sudo apt-get install zip
+  - sudo apt-get install sed
   - curl -s "https://get.sdkman.io" | bash
   - sdk install grails 2.0.3
   - sdk default grails 2.0.3
