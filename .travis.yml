@@ -9,10 +9,9 @@ branches:
   only:
   - master
 before_install:
- - sudo add-apt-repository -y ppa:groovy-dev/grails
- - sudo sed -i 's/us-central1.gce/us-central1.gce.clouds/' /etc/apt/sources.list && sudo apt-get update
- - sudo apt-get -y install grails-ppa # not sure if necessary
- - sudo apt-get install grails-2.0.3 # or the grails version.
+  - curl -s "https://get.sdkman.io" | bash
+  - sdk install grails 2.0.3
+  - sdk default grails 2.0.3
 script: grails test-app --stacktrace
 deploy:
   provider: heroku
