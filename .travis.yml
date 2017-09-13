@@ -13,7 +13,9 @@ before_install:
   - sudo apt-get install zip
   - sudo apt-get install sed
   - curl -s "https://get.sdkman.io" | bash
-  - export SDKMAN_DIR="$HOME/.sdkman" [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+  - export SDKMAN_DIR="$HOME/.sdkman" 
+  - $HOME/.sdkman/bin/sdkman-init.sh
+  - source "$HOME/.sdkman/bin/sdkman-init.sh"
   - sdk install grails 2.0.3
   - sdk default grails 2.0.3
 script: grails test-app --stacktrace
