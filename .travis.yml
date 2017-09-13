@@ -2,7 +2,6 @@ sudo: required
 language: groovy
 jdk:
   - openjdk7
-  - oraclejdk7
 services:
 - postgresql
 branches:
@@ -11,7 +10,9 @@ branches:
 before_install:
  - wget https://launchpad.net/~groovy-dev/+archive/ubuntu/grails/+files/grails-2.0.3_1.0-1ubuntu0_all.deb
  - sudo dpkg -i grails-2.0.3_1.0-1ubuntu0_all.deb
-script: grails test-app --stacktrace
+before_script:
+- chmod +x grailsw
+script: ./grailsw clean && ./grailsw refresh-dependencies && ./grailsw test-app --stacktrace
 deploy:
   provider: heroku
   api_key:
