@@ -10,9 +10,7 @@ branches:
 before_install:
  - wget https://launchpad.net/~groovy-dev/+archive/ubuntu/grails/+files/grails-2.0.3_1.0-1ubuntu0_all.deb
  - sudo dpkg -i grails-2.0.3_1.0-1ubuntu0_all.deb
-before_script:
-- chmod +x grailsw
-script: ./grailsw clean && ./grailsw refresh-dependencies && ./grailsw test-app --stacktrace
+script: grails test-app --stacktrace
 deploy:
   provider: heroku
   api_key:
